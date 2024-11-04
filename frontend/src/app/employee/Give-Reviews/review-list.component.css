@@ -1,0 +1,82 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the form */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form field styles */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* General button styles */
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Primary button styles */
+button[mat-raised-button][color="primary"] {
+  background-color: #174891;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button[mat-raised-button][color="primary"]:hover {
+  background-color: #b52906;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Back button styles */
+button.back-button {
+  background-color: #11446d;
+  color: white;
+}
+
+button.back-button:hover {
+  background-color: #1e88e5;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  div {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

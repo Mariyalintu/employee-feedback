@@ -1,0 +1,77 @@
+/* app/dashboard/dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the dashboard */
+    padding: 20px; /* Add padding around the dashboard */
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e6f1); /* Soft background gradient */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.dashboard-container:hover {
+    background: linear-gradient(to bottom right, #d9e6f1, #f0f4f8); /* Change gradient on hover */
+}
+
+/* Styles for the Admin Dashboard */
+.admin-dashboard {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width for content */
+    margin: 20px 0; /* Margin for separation */
+    padding: 20px; /* Inner padding */
+    background: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+.admin-dashboard:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Styles for Employee Dashboard */
+.employee-dashboard {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width for content */
+    margin: 20px 0; /* Margin for separation */
+    padding: 20px; /* Inner padding */
+    background: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+.employee-dashboard:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Card Styles */
+mat-card {
+    margin: 20px 0; /* Margin around cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    transition: box-shadow 0.3s; /* Transition for shadow */
+}
+
+mat-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Button Styles */
+button {
+    margin: 10px 5px; /* Margin for buttons */
+    font-weight: bold; /* Bold text for buttons */
+    border-radius: 4px; /* Slightly rounded buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 10px; /* Adjust padding on small screens */
+    }
+
+    .admin-dashboard, .employee-dashboard {
+        padding: 15px; /* Adjust padding for dashboards */
+    }
+}

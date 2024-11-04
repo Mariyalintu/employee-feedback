@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <h2>Employee Feedback App</h2>
+  <span class="spacer"></span>
+  <button mat-button (click)="navigateTo('dashboard')"></button>
+  <button mat-button (click)="navigateTo('manage-employees')"></button>
+  <button mat-button (click)="navigateTo('manage-reviews')"></button>
+  <button mat-button (click)="navigateTo('assign-reviews')"></button>
+</mat-toolbar>
+
+<!-- Main content area where routed components will be displayed -->
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>

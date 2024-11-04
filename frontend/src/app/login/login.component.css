@@ -1,0 +1,69 @@
+/* Container styling for the card */
+mat-card {
+  max-width: 400px; /* Max width of the card */
+  margin: 50px auto; /* Centering the card */
+  border-radius: 12px; /* Rounding corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0); /* Gradient background */
+}
+
+/* Header styling */
+mat-card-header {
+  background-color: #3f51b5; /* Primary color for the header */
+  color: white; /* White text color */
+  border-radius: 12px 12px 0 0; /* Rounding top corners */
+}
+
+/* Toolbar inside card header */
+mat-toolbar {
+  padding: 10px; /* Padding for the toolbar */
+}
+
+/* Form field styling */
+mat-form-field {
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space between fields */
+}
+
+/* Input styling */
+input.mat-input-element {
+  padding: 10px; /* Padding inside input */
+  border-radius: 4px; /* Rounding corners */
+  border: 1px solid #ccc; /* Light border */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+/* Input focus state */
+input.mat-input-element:focus {
+  border-color: #3f51b5; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5); /* Shadow effect on focus */
+}
+
+/* Button styling */
+button.mat-raised-button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    width: 100%; /* Full width for buttons */
+    margin-top: 10px; /* Margin above buttons */
+    border-radius: 4px; /* Rounding corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for background and transform */
+  }
+  
+  /* Button hover effects */
+  button.mat-raised-button:hover {
+    background-color: #f44336; /* Red background on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+  }
+  
+  /* Register button styling */
+  button.mat-button {
+    color: #3f51b5; /* Text color for register button */
+    text-align: center; /* Center text */
+    transition: color 0.3s; /* Smooth transition for text color */
+  }
+  
+  /* Register button hover effect */
+  button.mat-button:hover {
+    color: #f44336; /* Change text color to red on hover */
+  }
+  

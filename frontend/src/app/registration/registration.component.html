@@ -1,0 +1,50 @@
+<div class="registration-container" fxLayout="column" fxLayoutAlign="center center">
+  <h2>User Registration</h2>
+  <form #registrationForm="ngForm" (ngSubmit)="registerEmployee()" class="registration-form" fxLayout="column" fxLayoutGap="10px">
+    
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Username</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="newEmployee.username"
+        name="username"
+        required
+        placeholder="Enter your username"
+      />
+      <mat-error *ngIf="registrationForm.controls['username']?.invalid && (registrationForm.controls['username']?.touched || registrationForm.controls['username']?.dirty)">
+        Username is required.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        [(ngModel)]="newEmployee.password"
+        name="password"
+        required
+        placeholder="Enter your password"
+      />
+      <mat-error *ngIf="registrationForm.controls['password']?.invalid && (registrationForm.controls['password']?.touched || registrationForm.controls['password']?.dirty)">
+        Password is required.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" fxFlex>
+      <mat-label>Role</mat-label>
+      <mat-select [(ngModel)]="newEmployee.role" name="role" required>
+        <mat-option value="" disabled>Select your role</mat-option>
+        <mat-option value="Admin">Admin</mat-option>
+        <mat-option value="Employee">Employee</mat-option>
+      </mat-select>
+      <mat-error *ngIf="registrationForm.controls['role']?.invalid && (registrationForm.controls['role']?.touched || registrationForm.controls['role']?.dirty)">
+        Role is required.
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Register</button>
+    
+  </form>
+</div>

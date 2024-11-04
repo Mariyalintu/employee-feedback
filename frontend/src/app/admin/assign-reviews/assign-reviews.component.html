@@ -1,0 +1,33 @@
+<h2>Assign Reviews</h2>
+<div>
+
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select Reviewer</mat-label>
+    <mat-select [(ngModel)]="selectedReviewerId">
+      <mat-option *ngFor="let employee of employees" [value]="employee.id">
+        {{ employee.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select Reviewee</mat-label>
+    <mat-select [(ngModel)]="selectedRevieweeId">
+      <mat-option *ngFor="let employee of employees" [value]="employee.id">
+        {{ employee.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Feedback</mat-label>
+    <textarea matInput [(ngModel)]="feedback" rows="4"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="assignReview()">Assign Review</button>
+</div>
+
+<br>
+  <button mat-raised-button color="primary" (click)="goToDashboard()">Back to Dashboard</button>
+

@@ -1,0 +1,54 @@
+/* Style for the main container */
+h2 {
+  font-size: 28px;          /* Font size for the heading */
+  color: #2c3e50;          /* Dark blue color for the heading */
+  margin-bottom: 20px;     /* Space below the heading */
+  text-align: center;      /* Center the heading text */
+  font-weight: bold;       /* Bold text */
+  border-bottom: 3px solid #007bff; /* Bottom border for emphasis */
+  padding-bottom: 10px;    /* Space below the border */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Form styling */
+.mat-form-field {
+  width: 300px; /* Adjust width as needed */
+  margin-right: 20px; /* Space between form fields */
+}
+
+/* Button styling */
+.add-employee-button {
+  background-color: #3f51b5; /* Material theme color */
+  color: white;
+  margin-left: 10px; /* Space between fields and button */
+}
+
+/* Style for the table */
+table {
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Space above the table */
+  border-collapse: collapse; /* Merge borders */
+}
+
+th.mat-header-cell {
+  background-color: #f5f5f5; /* Header background color */
+  color: #333; /* Header text color */
+  font-weight: bold; /* Bold header text */
+  padding: 10px; /* Padding inside cells */
+  text-align: left; /* Align header text to the left */
+}
+
+td.mat-cell {
+  padding: 10px; /* Padding inside cells */
+  border-bottom: 1px solid #e0e0e0; /* Light border for rows */
+}
+
+/* Action button styling in table */
+button {
+  margin: 0; /* No margin */
+}
+
+/* Style for hover effect on table rows */
+tr.mat-row:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+}

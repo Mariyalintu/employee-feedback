@@ -1,0 +1,27 @@
+<div class="performance-reviews">
+  <h2>Performance Reviews</h2>
+
+  <!-- Button to go back to Employee Dashboard -->
+
+  <!-- Display error message if there's an issue -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Iterate over each review and display only those relevant to the logged-in person -->
+  <div *ngFor="let review of filteredReviews" class="review-card">
+    <div class="review-header">
+      <strong>Reviewer:</strong> {{ review.reviewerName }} | 
+      <strong>Reviewee:</strong> {{ review.revieweeName }}
+    </div>
+
+    <div class="review-feedback">
+      <strong>Feedback:</strong>
+      <p>{{ review.feedback }}</p>
+    </div>
+  </div>
+
+  <br>
+  <button mat-raised-button color="primary" class="back-button"  (click)="goToDashboard()">Back to Dashboard</button>
+
+</div>

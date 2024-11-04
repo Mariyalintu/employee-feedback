@@ -1,0 +1,60 @@
+/* app.component.css */
+
+mat-toolbar h2 {
+  font-size: 24px;            /* Set the font size for the heading */
+  color: white;               /* Set the text color to white for visibility on the toolbar */
+  font-weight: bold;          /* Make the text bold */
+  margin: 0;                  /* Remove default margin */
+  flex: 1;                    /* Allow the heading to take available space */
+  text-align: center;         /* Center the heading text */
+}
+
+
+mat-toolbar {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between title and buttons */
+  align-items: center; /* Center items vertically */
+  background-color: #3f51b5; /* Primary color for the toolbar */
+  color: white; /* Text color */
+  padding: 0 20px; /* Horizontal padding */
+  height: 60px; /* Fixed height */
+}
+
+/* Spacer to push buttons to the right */
+.spacer {
+  flex: 1; /* Takes up remaining space */
+}
+
+/* Styles for buttons in the toolbar */
+button {
+  color: white; /* Button text color */
+  font-weight: bold; /* Bold text for buttons */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Main content area */
+.main-content {
+  padding: 20px; /* Padding around the main content */
+  background-color: #f5f5f5; /* Light background for content */
+  min-height: calc(100vh - 60px); /* Full height minus toolbar height */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the content */
+  align-items: flex-start; /* Align items to start */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  mat-toolbar {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: flex-start; /* Align items to the left */
+      height: auto; /* Auto height */
+  }
+
+  .main-content {
+      padding: 10px; /* Adjust padding on small screens */
+  }
+}

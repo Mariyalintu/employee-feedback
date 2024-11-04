@@ -1,0 +1,23 @@
+<!-- app/dashboard/admin-dashboard.html -->
+<div class="admin-dashboard">
+  <h2>Admin Dashboard</h2>
+  <mat-card>
+    <mat-card-header>
+
+
+      <mat-card-title>Manage Employees</mat-card-title>
+      <mat-card-subtitle>Overview of employee management.</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>As an admin, you can manage employee details, reviews, and assignments.</p>
+      <button mat-raised-button color="primary" routerLink="/manage-employees">Manage Employees</button>
+      <button mat-raised-button color="accent" routerLink="/manage-reviews">Manage Reviews</button>
+      <button mat-raised-button color="warn" routerLink="/assign-reviews">Assign Reviews</button>
+
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Logout button with custom class -->
+<button mat-raised-button class="logout-button" (click)="logout()">Logout</button>
+
+</div>

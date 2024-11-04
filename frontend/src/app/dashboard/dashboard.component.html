@@ -1,0 +1,14 @@
+<!-- app/dashboard/dashboard.html -->
+<div class="dashboard-container">
+    
+    <!-- Display Admin Dashboard if user is Admin -->
+    <ng-container *ngIf="isAdmin; else employeeDashboard">
+      <app-admin-dashboard></app-admin-dashboard>
+    </ng-container>
+  
+    <!-- Display Employee Dashboard if user is not Admin -->
+    <ng-template #employeeDashboard>
+      <app-employee-dashboard></app-employee-dashboard>
+    </ng-template>
+  </div>
+  

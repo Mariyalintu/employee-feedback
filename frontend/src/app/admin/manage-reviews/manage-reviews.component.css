@@ -1,0 +1,41 @@
+h2 {
+  font-size: 28px;          /* Font size for the heading */
+  color: #2c3e50;          /* Dark blue color for the heading */
+  margin-bottom: 20px;     /* Space below the heading */
+  text-align: center;      /* Center the heading text */
+  font-weight: bold;       /* Bold text */
+  border-bottom: 3px solid #007bff; /* Bottom border for emphasis */
+  padding-bottom: 10px;    /* Space below the border */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #1976d2;
+  color: rgb(96, 62, 62);
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+td {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-button {
+  background-color: #b81a0f;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #790c0c;
+}
